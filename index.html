@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Youtube</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="ressources/youtube-favicon.png">
+        <script type="module" src="script.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div id="header-left" class="header-container">
+                <button id="side-menu-button"> <img src="ressources/header/hamburger-button.png" alt="Burder-button"></button>
+                <a id="logo" href="https://www.youtube.com/"><img src="https://freelogopng.com/images/all_img/1656501415youtube-png-logo.png" alt="Youtube"></a>
+            </div>
+            <div id="header-center" class="header-container">
+                <input id="search-bar" type="text" placeholder="Search">
+                <button id="search-button"> <img src="ressources/header/search-buttton.png" alt="search-button"></button>
+            </div>
+            <div id="header-right" class="header-container">
+                <button id="upload-button"><img src="ressources/header/upload-button.png" alt="upload-button"></button>
+                <button id="notification-button"><img src="ressources/header/notification-button.png" alt="notification-button"></button>
+                <button id="profile-button"><img src="ressources/header/profile-button.png" alt="profile-button"></button>
+            </div>
+        </header>
+        <aside id="full-aside" class="">
+            <ul>
+                <li><a class="side-button" href="https://www.youtube.com/"><img src="ressources/aside/home-icon.png" alt="home-icon"> <p>Home</p></a></li>
+                <li><a class="side-button" href="https://www.youtube.com/shorts"><img src="ressources/aside/shorts-icon.png" alt="shorts-icon"><p>Shorts</p></a></li>
+                <li><a class="side-button" href="https://www.youtube.com/feed/subscriptions"><img src="ressources/aside/subscriptions-icon.png" alt="subscriptions-icon"><p>Subscriptions</p></a></li>
+            </ul>
+            <ul>
+                <li><a class="side-button" href="https://www.youtube.com/feed/you"><img src="ressources/aside/you-icon.png" alt="you-icon"><p>You</p></a></li>
+                <li><a class="side-button" href="https://www.youtube.com/channel"><img src="ressources/aside/your-channel-icon.png" alt="your-channel-icon"><p>Your channel</p></a></li>
+                <li><a class="side-button" href="https://www.youtube.com/feed/history"><img src="ressources/aside/history-icon.png" alt="history-icon"><p>History</p></a></li>
+                <li><a class="side-button" href="https://www.youtube.com/feed/playlists"><img src="ressources/aside/playlist-icon.png" alt="playlist-icon"><p>Playlists</p></a></li>
+                <li><a class="side-button" href="https://studio.youtube.com/channel/"><img src="ressources/aside/your-videos-icon.png" alt="your-videos-icon"><p>Your videos</p></a></li>
+                <li><a class="side-button" href="https://www.youtube.com/playlist?list=WL"><img src="ressources/aside/watch-later-icon.png" alt="watch-later-icon"><p>Watch Later</p></a></li>
+                <li><a class="side-button" href="https://www.youtube.com/playlist?list=LL"><img src="ressources/aside/liked-videos-icon.png" alt="liked-videos-icon"><p>Liked Videos</p></a></li>
+                <li><a class="side-button" href="https://www.youtube.com/feed/clips"><img src="ressources/aside/clips-icon.png" alt="clips-icon"><p>Your clips</p></a></li>
+            </ul>
+            <div id="aside-subscriptions">
+                <h2>Subscriptions</h2>
+                <ul id="subscription-list">
+                    <!-- #X Subscriptions will be added here -->
+                    <!-- The following subscriptions are templates up for changes-->
+
+                    <li><a class="side-button" href="https://www.youtube.com/"><img src="ressources/header/profile-button.png" alt="profile-picture"><p>YOUTUBER-1</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/"><img src="ressources/header/profile-button.png" alt="profile-picture"><p>YOUTUBER-2</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/"><img src="ressources/header/profile-button.png" alt="profile-picture"><p>YOUTUBER-3</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/"><img src="ressources/header/profile-button.png" alt="profile-picture"><p>YOUTUBER-4</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/"><img src="ressources/header/profile-button.png" alt="profile-picture"><p>YOUTUBER-5</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/"><img src="ressources/header/profile-button.png" alt="profile-picture"><p>YOUTUBER-6</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/"><img src="ressources/header/profile-button.png" alt="profile-picture"><p>YOUTUBER-7</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/"><img src="ressources/header/profile-button.png" alt="profile-picture"><p>YOUTUBER-8</p></a></li>
+
+                    <li><button id="subscription-show-more-button" class="side-button"><img src="ressources/aside/you-icon.png" alt="you-icon"><p>Show more</p></button></li>
+                </ul>
+            </div>
+            <div id="aside-explore">
+                <h2>Explore</h2>
+                <ul>
+                    <li><a class="side-button" href="https://www.youtube.com/feed/trending"><img src="ressources/aside/trending-icon.png" alt="trending-icon"><p>Trending</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/channel/UC-9-kyTW8ZkZNDHQJ6FgpwQ"><img src="ressources/aside/music-icon.png" alt="music-icon"><p>Music</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/feed/storefront?bp=ogUCKAU%3D"><img src="ressources/aside/movies-icon.png" alt="movies-icon"><p>Movies & TV</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/channel/UC4R8DWoMoI7CAwX8_LjQHig"><img src="ressources/aside/live-icon.png" alt="live-icon"><p>Live</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/gaming"><img src="ressources/aside/gaming-icon.png" alt="gaming-icon"><p>Gaming</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/channel/UCYfdidRxbB8Qhf0Nx7ioOYw"><img src="ressources/aside/news-icon.png" alt="news-icon"><p>News</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/channel/UCEgdi0XIXXZ-qJOFPf4JSKw"><img src="ressources/aside/sports-icon.png" alt="sports-icon"><p>Sports</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/channel/UCtFRv9O2AHqOZjjynzrv-xg"><img src="ressources/aside/learning-icon.png" alt="learning-icon"><p>Learning</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/channel/UCrpQ4p1Ql_hG8rKXIKM1MOQ"><img src="ressources/aside/fashion-icon.png" alt="fashion-icon"><p>Fashion & Beauty</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/podcasts"><img src="ressources/aside/podcast-icon.png" alt="podcast-icon"><p>Podcasts</p></a></li>
+                    <li><a class="side-button" href="https://www.youtube.com/playables"><img src="ressources/aside/playables-icon.png" alt="playables"><p>Playable</p></a></li>
+                </ul>
+            <div id="copyrights-infos">
+                <p>
+                    This is a clone of the Youtube website. This project is made for educational purposes only. All rights reserved to Youtube.
+                </p>
+            </div>
+        </aside>
+        <aside id="collapsed-aside" class="invisible">
+            <ul>
+                <li><a href="https://www.youtube.com/"><img src="ressources/aside/home-icon.png" alt="home-icon"><p>Home</p></a></li>
+                <li><a href="https://www.youtube.com/shorts/"><img src="ressources/aside/shorts-icon.png" alt="shorts-icon"><p>Shorts</p></a></li>
+                <li><a href="https://www.youtube.com/feed/subscriptions"><img src="ressources/aside/subscriptions-icon.png" alt="subscriptions-icon"><p>Subscriptions</p></a></li>
+                <li><a href="https://www.youtube.com/feed/you"><img src="ressources/aside/you-icon.png" alt="you-icon"><p>You</p></a></li>
+            </ul>
+        </aside>
+        <nav id="theme-nav">
+            <ul>
+                <!-- #X User themes will be added here -->
+                <!-- The following themes are placeholders-->
+                <li><button><p>All</p></button></li>
+                <li><button><p>Music</p></button></li>
+                <li><button><p>Gaming</p></button></li>
+                <li><button><p>Mixes</p></button></li>
+                <li><button><p>Programming</p></button></li>
+                <li><button><p>HTML</p></button></li>
+                <li><button><p>AI</p></button></li>
+                <li><button><p>Live</p></button></li>
+                <li><button><p>Computers</p></button></li>
+                <li><button><p>Science</p></button></li>
+                <li><button><p>Math</p></button></li>
+                <li><button><p>History</p></button></li>
+                <li><button><p>Comedy</p></button></li>
+                <li><button><p>Documentaries</p></button></li>
+                <li><button><p>CSS</p></button></li>
+                <li><button><p>Javascript</p></button></li>
+                <li><button><p>Tutorials</p></button></li>
+                <li><button><p>News</p></button></li>
+                <li><button><p>Anime</p></button></li>
+                <li><button><p>Techno</p></button></li>
+                <li><button><p>Electro</p></button></li>
+                <li><button><p>Rock</p></button></li>
+                <li><button><p>Minecraft</p></button></li>
+                <li><button><p>Fortnite</p></button></li>
+                <li><button><p>COD</p></button></li>
+                <li><button><p>Valorant</p></button></li>
+                <li><button><p>Apex</p></button></li>
+                <li><button><p>CS:GO</p></button></li>
+                <li><button><p>Python</p></button></li>
+                <li><button><p>Java</p></button></li>
+            </ul>
+        </nav>
+        <main id="main-content">
+            <section id="recommended" class="normal-video-grid">
+                <!-- #X Recommended videos will be added here -->
+                <!-- The following videos are templates up for changes-->
+
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2018/08/23/07/35/thunderstorm-3625405_1280.jpg" alt="Video thumbnail">
+                            <p>43:25</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2023/12/22/21/18/pufferfish-8464398_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>The Serengeti: A Journey Through the Wild</h3>
+                                <p>NatureNerd</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2024/01/27/18/24/squirrel-8536537_1280.jpg" alt="Video thumbnail">
+                            <p>4:23</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2017/02/20/18/03/cat-2083492_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>Secrets of the Rainforest: Wildlife in the Amazon</h3>
+                                <p>WildExplorer</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2019/08/28/12/20/fog-4436636_1280.jpg" alt="Video thumbnail">
+                            <p>5:25</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2019/05/04/21/54/animal-4179187_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>The Great Migration: Africa Epic Journey</h3>
+                                <p>EcoVoyager</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2023/12/27/14/08/hortensia-8472151_1280.jpg" alt="Video thumbnail">
+                            <p>2:45</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2016/11/21/12/55/bunny-1845263_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>Ocean Wonders: Exploring Coral Reefse</h3>
+                                <p>AnimalAdventurer</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2018/10/30/16/06/water-lily-3784022_1280.jpg" alt="Video thumbnail">
+                            <p>14:14</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://placehold.co/50" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>The Majestic Mountains: Wildlife of the Rockies</h3>
+                                <p>WildernessWisdom</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2016/10/21/14/50/plouzane-1758197_1280.jpg" alt="Video thumbnail">
+                            <p>8:50</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2022/08/18/10/41/herring-gull-7394570_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>Under the Canopy: Life in the Tropical Rainforest</h3>
+                                <p>JungleJourneys</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2018/04/05/14/09/sunflowers-3292932_1280.jpg" alt="Video thumbnail">
+                            <p>9:05</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2013/06/29/21/18/wolf-142173_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>The Arctic Tundra: Surviving the Cold</h3>
+                                <p>OceanOdyssey</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2024/03/04/16/44/barberry-8612696_1280.jpg" alt="Video thumbnail">
+                            <p>10:40</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2023/05/24/14/43/cat-8015038_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>Desert Dwellers: Wildlife of the Sahara</h3>
+                                <p>ForestFanatic</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2018/04/28/22/03/tree-3358468_1280.jpg" alt="Video thumbnail">
+                            <p>3:45</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2023/04/21/16/23/mongoose-7942222_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>Mysteries of the Deep: Ocean's Predators</h3>
+                                <p>SavannaStories</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2017/08/30/01/05/milky-way-2695569_1280.jpg" alt="Video thumbnail">
+                            <p>3:25</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2024/01/23/22/27/iguana-8528387_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>Birds of Paradise: The Most Colorful Creatures</h3>
+                                <p>RainforestRover</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2014/09/14/18/04/dandelion-445228_1280.jpg" alt="Video thumbnail">
+                            <p>35:36</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2016/08/06/19/23/highland-cow-1575003_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>Wild Africa: The Big Five in Action</h3>
+                                <p>ArcticAdventures</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2023/08/19/13/56/flower-8200543_1280.jpg" alt="Video thumbnail">
+                            <p>1:54</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2016/05/02/13/17/deer-1367217_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>The Amazon River: Lifeline of the Rainforest</h3>
+                                <p>DesertDiscoveries/p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2023/12/08/23/46/cat-8438334_1280.jpg" alt="Video thumbnail">
+                            <p>3:28</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2018/07/14/17/46/raccoon-3538081_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>Giants of the Ocean: The World of Whales</h3>
+                                <p>WildlifeWanderer</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2018/09/19/23/03/sunset-3689760_1280.jpg" alt="Video thumbnail">
+                            <p>43:29</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2017/12/17/15/58/mouflon-3024471_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>Forests of the World: A Wildlife Documentary</h3>
+                                <p>NatureNarratives</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2018/09/23/18/30/drop-3698073_1280.jpg" alt="Video thumbnail">
+                            <p>8:40</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2016/04/06/01/51/fox-1310840_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>In the Heart of the Jungle: Big Cats of India</h3>
+                                <p>UntamedUniverse</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2024/02/07/16/15/flower-8559381_1280.jpg" alt="Video thumbnail">
+                            <p>23:26</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2023/09/11/13/08/dog-8246868_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>The Wonders of Yellowstone National Park</h3>
+                                <p>EcoExpeditions</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2017/08/01/09/34/white-2563976_1280.jpg" alt="Video thumbnail">
+                            <p>47:57</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2023/01/31/19/52/dog-7758887_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>The Hidden Life of Trees: Forest Ecosystems</h3>
+                                <p>SafariSeeker</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://cdn.pixabay.com/photo/2018/07/12/11/45/sunrise-3533173_1280.jpg" alt="Video thumbnail">
+                            <p>21:45</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://cdn.pixabay.com/photo/2017/10/20/10/58/elephant-2870777_1280.jpg" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>Wild Australia: The Land of Unique Creatures</h3>
+                                <p>NatureNomad</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+                
+            </section>
+
+            <!-- #X Shorts will be added here -->
+            <!-- The following shorts are templates up for changes-->
+            <!--
+                <section id="Shorts">
+                    <div>
+                        <a href="video-link-here">
+                            <img src="https://placehold.co/500x888" alt="Video thumbnail">
+                            <h3>Video title here</h3>
+                            <p>Views here</p>
+                        </a>
+                    </div>
+                    
+                </section>
+            -->
+
+            <!-- #X Rest of the feed will be added here -->
+            <!-- The following videos are templates up for changes-->
+<!--
+    
+    <section id="rest-feed" class="normal-video-grid">
+        
+        <div class="video-template">
+                    <a href="video-link-here">
+                        <div class="inner-thumbnail-container">
+                            <img src="https://placehold.co/1280x720" alt="Video thumbnail">
+                            <p>4:20</p>
+                        </div>
+                        <div class="inner-info-container">
+                            <img src="https://placehold.co/50" alt="profile-picture">
+                            <div class="inner-text-container">
+                                <h3>Video title here</h3>
+                                <p>YOUTUBER-1</p>
+                                <div class="inner-data-container">
+                                    <p>9M views</p>
+                                    <p> • </p>
+                                    <p>3 days ago</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+
+            </section>
+        -->
+        </main>
+    </body>
+    </html>
